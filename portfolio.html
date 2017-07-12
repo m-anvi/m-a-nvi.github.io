@@ -3,22 +3,45 @@
 <html>
   <head>
     <title>MANVI!?</title>
+    <!-- Set the style of the table -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <style>
+
+      body{
+        color: inherit;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      table, th, td{
+        border: 2px solid #01426a;
+        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+        vertical-align: middle;
+        color: #01426a
+      }
+
+      th  {
+        background-color: #ece81a
+      }
+      tr:hover {background-color: #ece81a}
+
+    </style>
   </head>
   <body style = "background-color:#e6ffff;">
 
-    /overview and requirements
-
     <h1 style = "text-allign:left;"> hey there </h1>
       <p> First things first, here are some causes and organizations I care about. Advocating for them is a huge part of my life and who I am.
-    <p> <a href = "https://www.plannedparenthood.org/"> planned parenthood </a> </p>
-    <p> <a href = "https://www.friendsofanimals.org/"> friends of animals </a> </p>
+        <a href = "https://www.plannedparenthood.org/"> planned parenthood </a>
+        <a href = "https://www.friendsofanimals.org/"> friends of animals </a>
         <a href = "http://www.unep.org/"> united nations environment protection </a>
-       
+        <a href = "http://planetary.org/"> planetary society </a>
     <h2 style = "text-allign:center;"> a tiny bit about me </h2>
       <p> My name is Manvi, I'm a high school student in Washington state.
         I am currently participating in the Summer Immersion Program
         run by Girls Who Code, at a Microsoft campus in Redmond. </p>
-  <h3 style = "text-allign:right;"> more things I like </h3>
+    <h3 style = "text-allign:right;"> more things I like </h3>
       <p> Art is a pretty big part of my life. I definitely don't know what I'm doing with my art journal most of the time,
         but that's part of the reason I love art - it can be as free form and spontaneous as you want it. I get a lot of inspiration
         from
@@ -34,16 +57,75 @@
             into this game, with the aim of educating and empowering players. You can play it
             <a href = "https://scratch.mit.edu/projects/168317206/"> here. </a> </i> </p>
             <img src="https://apod.nasa.gov/apod/ap161107.html" alt="picture"
-                 
-                 <h5> reflection 7/10 </h5>
-        <p> To make my website accessible to as many users as possible, I am (planning to) include alternative text descriptions for all of my images. 
-          I will also reduce the amount of links users have to follow to get to different parts of the page, so that people with limited mobility have
-          a simpler time navigating my website. 
-          People have been doing some small things to their code to change the design and overall look of their page in a really awesome way. I have seen 
-          a lot of creative uses of fonts, text colors, background colors, and text allignments which I will look into incorporating with my own website. 
-          This is the first time I am working with HTML from scratch. I usually just edit websites that already have a basic framework. I feel proud that I 
-          am finally learning how to create something entirely new. </p>
+
+
+
+
+
+                <!-- Table starts here-->
+                <div style ="overflow-x:auto;">
+                  <table style="width:90%; margin:1em auto">
+
+                    <!-- Define the first row of the table -->
+                    <tr>
+                      <th>Core4 Concept</th>
+                      <th>Technical Definition</th>
+                      <th>Real-Life Analogy</th>
+                      <th>Python Example</th>
+                      <th>Scratch Example</th>
+                    </tr>
+
+                    <!-- Fill in the row for Variables -->
+                    <tr>
+                    <td><b>Variables</b></td>
+                      <td>symbolic name for (or in reference to) information; holds information</td>
+                      <td>"x" represents the number of puppies that have passed by</td>
+                      <td> x = int(input('how many puppies have passed?'))</td>
+                      <td> <img src="https://cms-assets.tutsplus.com/uploads/users/227/posts/24230/final_image/scratch-variables-reset-score.jpg" alt="scratch variables"> </td>
+                    </tr>
+
+                    <!-- Fill in the row for Loops -->
+                    <tr>
+                      <td><b>Loops</b></td>
+                      <td>repeats a block of code over and over; can be a 'for loop' or a 'while' loop</td>
+                      <td>for every puppy that walks by, wave</td>
+                      <td> for x in range (smile):
+                              smile</td>
+                      <td> <img src="http://www.finchrobot.com/sites/default/files/image00_17.png" alt="scratch loop"></td>
+                    </tr>
+
+                    <!-- Fill in the row for Conditionals -->
+                    <tr>
+                      <td><b>Conditionals</b></td>
+                      <td>expressions that evaluate if a statement is true or false to make a decision</td>
+                      <td>when 20 puppies have passed, go home</td>
+                      <td>if x == 20:
+                            print ("go home")</td>
+                      <td> <img src="http://cs.harvard.edu/malan/scratch/if.gif" alt="scratch conditional"> </td>
+                    </tr>
+
+                    <!-- Fill in the row for Functions -->
+                    <tr>
+                      <td><b>Functions</b></td>
+                      <td>self-contained modules of code that accomplish a specific task</td>
+                      <td>"go home" comprises of standing up, walking out of the park, turning, navigating, unlocking the front door, etc.</td>
+                      <td>def ("go home")
+                            print(directions)</td>
+                      <td>  </td>
+                    </tr>
+
+                  </table>
+                </div>
+
+              </body>
 
 
   </body>
-</html
+
+
+
+
+
+
+
+</html>
