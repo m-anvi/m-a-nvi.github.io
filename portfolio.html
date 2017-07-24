@@ -1,9 +1,69 @@
 <!DOCTYPE html>
-
 <html>
   <head>
-    <title>MANVI!?</title>
+    <title>manvi!?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#home">Home</a></li>
+    <li><a href="#menu1">about me</a></li>
+    <li><a href="#menu2">projects</a></li>
+    <li><a href="#menu3">Menu 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3 style = "text-allign:center;"> hey there </h3>
+        <p> First things first, here are some causes and organizations I care about. Advocating for them is a huge part of my life and who I am.
+          <a href = "https://www.plannedparenthood.org/"> planned parenthood </a>
+          <a href = "https://www.friendsofanimals.org/"> friends of animals </a>
+          <a href = "http://www.unep.org/"> united nations environment protection </a>
+          <a href = "http://planetary.org/"> planetary society </a> </p>
+    </div> <!-- home tab-->
+    <div id="menu1" class="tab-pane fade"> <!--about me tab-->
+      <h3 style = "text-align:center;">about me</h3>
+          <p> My name is Manvi, I'm a high school student in Washington state.
+              I am currently participating in the Summer Immersion Program
+              run by Girls Who Code, at a Microsoft campus in Redmond. </p>
+    </div>
+    <div id="menu2" class="tab-pane fade"> <!--projects-->
+      <h3 style="text-align:center;">projects</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Over the course of this seven week program, we learn new skills and apply them to projects.
+        They can last anywhere from 10 minutes to a couple days. Here are some of them.</p>
+        <h5 style="text-align:center;"> <i> Grabs Back </i> </h5>
+        <p> <i> In the first week of this program, we worked
+          with a partner to design a side-scrolling game using Scratch.
+          My partner and I chanelled our support and passion for womens rights
+          into this game, with the aim of educating and empowering players. You can play it
+          <a href = "https://scratch.mit.edu/projects/168317206/"> here. </a> </i> </p>
+
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
+</script>
+
+</body>
     <!-- Set the style of the table -->
+
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
 
     <style>
@@ -26,21 +86,10 @@
         background-color: #ece81a
       }
       tr:hover {background-color: #ece81a}
-
     </style>
   </head>
   <body style = "background-color:#e6ffff;">
-
-    <h1 style = "text-allign:left;"> hey there </h1>
-      <p> First things first, here are some causes and organizations I care about. Advocating for them is a huge part of my life and who I am.
-        <a href = "https://www.plannedparenthood.org/"> planned parenthood </a>
-        <a href = "https://www.friendsofanimals.org/"> friends of animals </a>
-        <a href = "http://www.unep.org/"> united nations environment protection </a>
-        <a href = "http://planetary.org/"> planetary society </a>
-    <h2 style = "text-allign:center;"> a tiny bit about me </h2>
-      <p> My name is Manvi, I'm a high school student in Washington state.
-        I am currently participating in the Summer Immersion Program
-        run by Girls Who Code, at a Microsoft campus in Redmond. </p>
+<script> window.alert("hey this is my page, it is a work in progress (like me) plz do not look and have a nice day"); </script>
     <h3 style = "text-allign:right;"> more things I like </h3>
       <p> Art is a pretty big part of my life. I definitely don't know what I'm doing with my art journal most of the time,
         but that's part of the reason I love art - it can be as free form and spontaneous as you want it. I get a lot of inspiration
@@ -48,19 +97,14 @@
       <a href = "http://theinspirationgrid.com/category/art/"> here. </a>
       My mom is a professional photographer so I look at her work for inspiration too (yeah this is a casual unappologetic promotion because my mom is amazing).
       Check it out
-      <a href = "http://www.reenasaxena.com/"> here. </a>
-    </p>
+      <a href = "http://www.reenasaxena.com/"> here. </a></p>
     <h4 style = "text-size:130%;"> Grabs Back </h4>
+          <img src="grabsback2.jpg" alt="picture">
           <p> <i> In the first week of this program, we worked
             with a partner to design a side-scrolling game using Scratch.
             My partner and I chanelled our support and passion for womens rights
             into this game, with the aim of educating and empowering players. You can play it
             <a href = "https://scratch.mit.edu/projects/168317206/"> here. </a> </i> </p>
-            <img src="https://apod.nasa.gov/apod/ap161107.html" alt="picture"
-
-
-
-
 
                 <!-- Table starts here-->
                 <div style ="overflow-x:auto;">
@@ -118,14 +162,11 @@
                 </div>
 
               </body>
-
-
-  </body>
-
-
-
-
-
-
+  </body> <!--includes window alert-->
+  <body>
+    <h1> Week Three: Robotics </h1>
+    <img src = "robot.jpg" alt="robot" style="width:320px;height:480px;">
+    <p1> We used a basic arduino set up to program a robot to move to our own choreography. </p1>
+  </body> <!-- robot project -->
 
 </html>
