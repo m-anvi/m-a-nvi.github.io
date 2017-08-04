@@ -16,25 +16,28 @@ class Network:
     def __init__(self, community):
             self.name = community
             self.users = []
-    def __newuser__(self, name,age):
+    def newuser(self, name,age):
             new_user=User(name)
             new_user.change_age(age)
-            self.user.append(new_user)
+            self.users.append(new_user)
 
 
 def main():
-    newnetwork = Network("new net")
-    A = input("type A to create a new user")
-    if A=="A":
-        name = input("what is your name?")
-        age = input("how old are you?")
-        if int(age) > 18:
-                self.adult = True
-        friends = input("who do you work with now?")
-        profile = name, age, friends
-        print(profile)
-    else:
-        print("Ok thanks but that's not an A so goodbye.")
+    while 3>1:   #no significance, I just needed a forever loop
+        newnetwork = Network("new net")
+        A = input("type A to create a new user, or B to see current users")
+        if A=="A":
+            name = input("what is your name?")
+            age = input("how old are you?")
+            newnetwork.newuser(name, age)
+            friends = input("who do you works with now?")
+            profile = name, age, friends
+        elif A=="B":
+            print(newnetwork.users)
+        elif A=="exit":
+            break
+        else:
+            print("Ok thanks but that's not an option. Please try again. ")
 
 
     # Define the program flow for your user interface here.
