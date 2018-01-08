@@ -1,0 +1,13 @@
+h1{
+text:red;
+}
+p{
+  position:center;
+}
+body{
+  color: inherit;
+  font-family: 'Open Sans', sans-serif;
+}
+h3{
+  text-align:center
+}
