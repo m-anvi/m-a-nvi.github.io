@@ -1,13 +1,13 @@
-h1{
-text:red;
-}
 p{
   position:center;
 }
 body{
-  color: inherit;
+  background-color: yellow;
   font-family: 'Open Sans', sans-serif;
 }
 h3{
-  text-align:center
+  text-align:center;
+}
+ul{
+  text-align:center;
 }
