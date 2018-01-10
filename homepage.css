@@ -5,15 +5,10 @@ p{
 }
 
 body{
-  background-color: yellow;
   font-family: 'Open Sans', sans-serif;
   margin: 80px;
 }
 
 h3{
-  text-align:center;
-}
-
-ul{
   text-align:center;
 }
