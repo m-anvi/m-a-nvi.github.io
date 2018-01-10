@@ -1,13 +1,19 @@
 p{
   position:center;
+  text-align: center;
+  padding: 30px 60px 30px;
 }
+
 body{
   background-color: yellow;
   font-family: 'Open Sans', sans-serif;
+  margin: 80px;
 }
+
 h3{
   text-align:center;
 }
+
 ul{
   text-align:center;
 }
